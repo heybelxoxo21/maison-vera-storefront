@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MAISON VÉRA — Architectural leather handbags and minimalist luxury accessories." />
+  <title>MAISON VÉRA | Architectural Leather Goods</title>
+
+  <!-- Luxury Editorial Typography from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Link to our external stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- 1. NAVIGATION BAR -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary Navigation">
+      <a href="#" class="brand-logo">MAISON VÉRA</a>
+      <ul class="nav-links">
+        <li><a href="#collection">Bags</a></li>
+        <li><a href="#accessories">Accessories</a></li>
+        <li><a href="#atelier">The Atelier</a></li>
+        <li><a href="#journal">Journal</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#bag" class="bag-link">Bag (0)</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 2. MAIN STOREFRONT CONTENT -->
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero" aria-label="Featured Campaign">
+      <div class="hero-content">
+        <p class="eyebrow">Autumn / Winter Capsule</p>
+        <h1 class="hero-title">Sculpted in Full-Grain Calfskin</h1>
+        <p class="hero-subtitle">Timeless silhouettes engineered with architectural precision and quiet restraint.</p>
+        <a href="#collection" class="btn-primary">Explore the Collection</a>
+      </div>
+    </section>
+
+    <!-- PRODUCT COLLECTION GRID -->
+    <section id="collection" class="collection-section">
+      <div class="section-header">
+        <p class="eyebrow">Curated Pieces</p>
+        <h2>Signature Leather Bags</h2>
+
+        <!-- Interactive Filter & Currency Toolbar -->
+        <div class="catalog-toolbar">
+          <div class="filter-buttons" role="group" aria-label="Filter by category">
+            <button class="filter-btn active" data-category="all">All Pieces</button>
+            <button class="filter-btn" data-category="totes">Totes</button>
+            <button class="filter-btn" data-category="clutches">Clutches</button>
+            <button class="filter-btn" data-category="crossbody">Crossbody</button>
+          </div>
+
+          <div class="currency-switcher">
+            <button id="currency-toggle" class="currency-btn" aria-label="Switch Currency">Currency: EUR (€)</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Empty container: JavaScript injects product cards here -->
+      <div class="product-grid" id="product-grid"></div>
+    </section>
+
+    <!-- BRAND CRAFTSMANSHIP SECTION -->
+    <section id="atelier" class="atelier-section">
+      <div class="atelier-content">
+        <p class="eyebrow">Savoir-Faire</p>
+        <h2>Hand-Finished Edge Painting &amp; Solid Brass Hardware</h2>
+        <p>Every piece is cut, skived, and saddle-stitched in small batches to age with quiet character over decades.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 3. FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; 2026 MAISON VÉRA. All rights reserved.</p>
+  </footer>
+
+  <!-- Connect JavaScript at the bottom so HTML loads first -->
+  <!-- 3. FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; 2026 MAISON VÉRA. All rights reserved.</p>
+  </footer>
+
+  <!-- 4. SLIDE-OUT SHOPPING BAG DRAWER -->
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+  <aside class="bag-drawer" id="bag-drawer" aria-label="Shopping Bag">
+    <div class="drawer-header">
+      <h3>Your Selection</h3>
+      <button class="close-drawer-btn" id="close-drawer" aria-label="Close Bag">Close &times;</button>
+    </div>
+
+    <div class="drawer-items" id="drawer-items">
+      <!-- Cart items injected dynamically by JavaScript -->
+    </div>
+
+    <div class="drawer-footer">
+      <div class="drawer-subtotal-row">
+        <span>Estimated Total</span>
+        <span id="drawer-subtotal">€0</span>
+      </div>
+      <p class="drawer-note">Complimentary insured courier delivery &amp; signature dust bag.</p>
+      <button class="btn-primary checkout-btn" id="checkout-btn">Proceed to Private Checkout</button>
+    </div>
+  </aside>
+
+  <!-- Connect JavaScript at the bottom so HTML loads first -->
+  <script src="js/app.js"></script>
+</body>
+</html>

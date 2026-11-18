@@ -1,0 +1,38 @@
+[
+  {
+    "id": "01",
+    "code": "01 / L'Arc Tote",
+    "title": "L'Arc Structured Tote",
+    "material": "Box Calfskin — Espresso",
+    "category": "totes",
+    "priceEur": 1450,
+    "badge": "New Arrival"
+  },
+  {
+    "id": "02",
+    "code": "02 / Solenne Clutch",
+    "title": "Solenne Fold Clutch",
+    "material": "Nappa Leather — Alabaster",
+    "category": "clutches",
+    "priceEur": 890,
+    "badge": ""
+  },
+  {
+    "id": "03",
+    "code": "03 / Véra Saddle",
+    "title": "Véra Mini Saddle",
+    "material": "Saddle Grain — Obsidian",
+    "category": "crossbody",
+    "priceEur": 1180,
+    "badge": ""
+  },
+  {
+    "id": "04",
+    "code": "04 / Céleste Crossbody",
+    "title": "Céleste Chain Crossbody",
+    "material": "Suede Calfskin — Cognac",
+    "category": "crossbody",
+    "priceEur": 960,
+    "badge": "Limited"
+  }
+]
